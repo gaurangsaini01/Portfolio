@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { TypewriterEffectSmooth } from "./TypingText";
+import { cn } from "../utils/cn";
 
 const Hero = () => {
     const words = [
@@ -17,7 +18,7 @@ const Hero = () => {
         },
         {
           text: "Yogesh.",
-          className: "text-[#915EFF] dark:text-[#915EFF]",
+          className: `text-[#915EFF] dark:text-[#915EFF]`,
         },
       ];
 
@@ -32,11 +33,11 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={cn(styles.heroHeadText, 'text-white')}>
             <TypewriterEffectSmooth words={words} />
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-red-100`}>
-            I am a Full Stack <br className='sm:block hidden' />
+          <p className={`${styles.heroSubText} mt-2 text-red-100 text-[25px]`}>
+            I am a Full Stack <br className='' />
             Web developer
           </p>
         </div>

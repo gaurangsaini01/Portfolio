@@ -2,6 +2,7 @@
 import { cn } from "../utils/cn";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
+import { styles } from "../styles";
 
 export const TypewriterEffect = ({
   words,
@@ -82,7 +83,7 @@ export const TypewriterEffect = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
+          "inline-block rounded-sm w-[4px] h-[50px] lg:h-[98px] bg-blue-500",
           cursorClassName
         )}
       ></motion.span>
@@ -141,7 +142,7 @@ export const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-xs sm:text-base md:text-xl lg:text:3xl xl:text-5xl font-bold"
+          className={styles.heroHeadText}
           style={{
             whiteSpace: "nowrap",
           }}
@@ -163,7 +164,7 @@ export const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px]  h-4 sm:h-6 xl:h-12 bg-blue-500",
+          "block rounded-sm w-[4px]  bg-blue-500",
           cursorClassName
         )}
       ></motion.span>
