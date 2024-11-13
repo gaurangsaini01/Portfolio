@@ -27,7 +27,6 @@ const Contact = () => {
     });
   };
 
-  console.log(import.meta.env.VITE_APP_EMAILJS_SERVICE_ID)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,7 +58,6 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
 
           alert("Ahh, something went wrong. Please try again.");
         }

@@ -1,9 +1,14 @@
 import { BriefcaseIcon, EnvelopeIcon, HomeIcon, UserIcon } from '@heroicons/react/20/solid';
 import './App.css'
+import React from 'react';
 import { chefkart, hotelBhabha, nikeStore, tror } from './assets';
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
-import { HeroParallax } from './components/HeroParallex';
-
+import { Navbar, StarsCanvas } from "./components";
+const About = React.lazy(() => import('./components/About'));
+const Contact = React.lazy(() => import('./components/Contact'));
+const Experience = React.lazy(() => import('./components/Experience'));
+const Hero = React.lazy(() => import('./components/Hero'));
+const Tech = React.lazy(() => import('./components/Tech'));
+const Works = React.lazy(() => import('./components/Works'));
 
 export const products = [
   {

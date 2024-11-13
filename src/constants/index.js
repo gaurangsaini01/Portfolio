@@ -149,7 +149,7 @@ const experiences = [
     company_name: "Sofodel",
     icon: sofodel,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "September 2022 - December 2022",
     points: [
       "Crafted custom websites and efficient web applications, aligning with client branding and needs, to streamline workflows and increase productivity.",
       "Built interactive user interfaces utilizing React.js, enhancing user experience and functionality",
