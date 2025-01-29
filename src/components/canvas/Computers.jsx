@@ -56,6 +56,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
+      className="hidden md:block"
       frameloop='demand'
       shadows
       dpr={[1, 2]}
