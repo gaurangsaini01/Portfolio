@@ -19,7 +19,7 @@ const Hero = () => {
         },
         {
           text: "Yogesh.",
-          className: `text-[#915EFF] dark:text-[#915EFF]`,
+          className: `text-[#915EFF]`,
         },
       ];
 
