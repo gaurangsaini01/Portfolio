@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { HeroParallax } from '../components/HeroParallex'
 import { navItems, products } from '../App'
 import { Navbar, StarsCanvas } from '../components'
+import ScrollToTop from '../scrollToTop'
 
 const Work = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const Work = () => {
 
   return (
     <div className='relative z-0 mb-5'>
+        <ScrollToTop/>
       <Navbar navItems={navItems} />
       <HeroParallax products={products} />
       <StarsCanvas />

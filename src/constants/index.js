@@ -1,33 +1,22 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
   redux,
+  codequotient_logo,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
   docker,
-  meta,
-  thimbot,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-  heliverse,
-  sofodel,
-  hotelBhabha,
   nikeStore,
-  chefkart
+  abilityex,
+  nextjs,
+  studynotion,
+  buysellplatform,
+  cineview
 } from "../assets";
 
 export const navLinks = [
@@ -45,24 +34,6 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
-];
 
 const technologies = [
   {
@@ -102,16 +73,12 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name:"Next.Js",
+    icon:nextjs
   },
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -121,75 +88,39 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Engineer",
-    company_name: "Thimble.io",
-    icon: thimbot,
-    iconBg: "#383E56",
-    date: "March 2023 - July 2024",
+    title: "Software Developer Trainee",
+    company_name: "CodeQuotient",
+    icon:   codequotient_logo,
+    iconBg: "#fff",
+    date: "Dec 2024 - March 2025",
     points: [
-      "Developing and maintaining web applications using Nextjs and other related technologies.",
-      "Designed platforms with real-time student insights and easy course creation, improving educator experience and content accessibility",
-      "Utilized modern technologies to build robust platforms, contributing to Thimble.io's mission of preparing future-ready students and educators."
+      "Played crucial role in development of an AI-powered interview portal where AI conducts technical interviews, storing chat history in Redis for efficient retrieval.",
+      " Worked in the migration of the company's EJS-based website to React, developing reusable components and optimizing performance.",
+      "Designed and implemented a custom Tags Component for multi-email input, improving usability and user experience."
     ],
   },
   {
-    title: "React Developer",
-    company_name: "Heliverse",
-    icon: heliverse,
+    title: "Full Stack Developer Intern",
+    company_name: "AbilityEx",
+    icon: abilityex,
     iconBg: "#E6DEDD",
-    date: "December 2022 - March 2023",
+    date: "July 2024 - Aug 2024",
     points: [
-      "Built high-performing and scalable websites and web applications using Next.js, ensuring smooth user experiences for diverse clients.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Crafted custom websites and efficient web applications, aligning with client branding and needs, to streamline workflows and increase productivity."
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Sofodel",
-    icon: sofodel,
-    iconBg: "#383E56",
-    date: "September 2022 - December 2022",
-    points: [
-      "Crafted custom websites and efficient web applications, aligning with client branding and needs, to streamline workflows and increase productivity.",
-      "Built interactive user interfaces utilizing React.js, enhancing user experience and functionality",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Built the entire dashboard for their Learning Management System (LMS) using ReactJS.",
+      "Developed fully customized multi-step sign-in and login forms without using any external libraries, integrating features like Google Sign-In via OAuth 2.0.",
+      "Collaborated with the designer to develop a pixel-perfect website matching the design specifications."
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+
 
 const projects = [
   {
-    name: "Hotel Bhabha",
+    name: "StudyNotion",
+    livelink:"https://study-notion-ed-t.vercel.app",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Built a full-featured EdTech platform enabling instructors to create and sell courses, and students to learn and review them. Integrated features like video streaming, Razorpay payments, secure OTP-based authentication, and dynamic dashboards.",
     tags: [
       {
         name: "react",
@@ -203,52 +134,83 @@ const projects = [
         name: "nodejs",
         color: "pink-text-gradient",
       },
+      {
+        name:"cloudinary",
+        color:"blue-text-gradient"
+      }
     ],
-    image: hotelBhabha,
-    source_code_link: "https://github.com/",
+    image: studynotion,
+    source_code_link: "https://github.com/gaurangsaini01/StudyNotion",
   },
-  {
-    name: "Nike Store",
+   {
+    name: "Buy-Sell Platform",
+    livelink:null,
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A comprehensive E-commerce  platform that allows the students of IIIT to exchange/sell their goods within their college. Implemented features like JWT-based authentication, role-based access, real-time search and filtering, and OTP-verified order confirmation.",
     tags: [
       {
-        name: "react",
+        name: "ReactJS",
         color: "blue-text-gradient",
       },
       {
-        name: "redux",
+        name: "NodeJs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: buysellplatform,
+    source_code_link: "https://github.com/gaurangsaini01/Buyer-Seller-Portal",
+  },
+  {
+    name: "Cineview",
+    livelink:"https://cineview-app.netlify.app/",
+    description:
+      "CineView, a movie and TV show exploration platform using ReactJS and Tailwind CSS, integrated with an external API to display trending content. Features include genre-based filtering, search with debouncing, pagination, and a fully responsive design for smooth user experience across devices.",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+      {name:"TmdbApi",
+        color:"text-green-500"
+      }
+    ],
+    image: cineview,
+    source_code_link: "https://github.com/gaurangsaini01/CineView-App",
+  },
+  {
+    name: "Nike Store",
+    livelink:"https://nikeshopease.netlify.app/",
+    description:
+      "Developed a responsive Nike Store clone using ReactJS, Tailwind CSS, and Redux Toolkit, featuring a dynamic product catalog, shopping cart functionality, and seamless state management for an enhanced user experience.",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: nikeStore,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Chefkart",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "stripe",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: chefkart,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/gaurangsaini01/Nike_Store",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {  technologies, experiences, projects };

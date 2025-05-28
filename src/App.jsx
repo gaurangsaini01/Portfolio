@@ -1,8 +1,9 @@
 import { BriefcaseIcon, EnvelopeIcon, HomeIcon, UserIcon } from '@heroicons/react/20/solid';
 import './App.css'
 import React from 'react';
-import { chefkart, hotelBhabha, nikeStore, tror } from './assets';
-import { Navbar, StarsCanvas } from "./components";
+import { buysellplatform, cineview, nikeStore, studynotion } from './assets';
+import {  Navbar, StarsCanvas } from "./components";
+import ScrollToTop from './scrollToTop';
 const About = React.lazy(() => import('./components/About'));
 const Contact = React.lazy(() => import('./components/Contact'));
 const Experience = React.lazy(() => import('./components/Experience'));
@@ -12,44 +13,40 @@ const Works = React.lazy(() => import('./components/Works'));
 
 export const products = [
   {
-    title: "Hotel Bhabha",
-    link: "https://hotelbhabha.com/",
-    thumbnail: hotelBhabha,
-  },
-  {
     title: "Nike Store",
-    link: "https://nike-limitless.vercel.app/",
+    link: "https://nikeshopease.netlify.app/",
     thumbnail: nikeStore,
   },
   {
-    title: "Chefkart",
-    link: "https://thechefkart.com/",
-    thumbnail: chefkart,
+    title: "Buy-Sell-Platform",
+    link: "https://github.com/gaurangsaini01/Buyer-Seller-Portal",
+    thumbnail: buysellplatform,
+  },
+  
+  {
+    title: "StudyNotion",
+    link: "https://study-notion-ed-t.vercel.app",
+    thumbnail: studynotion,
   },
   {
-    title: "tror.ai",
-    link: "https://tror.ai/",
-    thumbnail: tror,
+    title: "Cineview",
+    link: "https://cineview-app.netlify.app",
+    thumbnail: cineview,
   },
   {
-    title: "tror.ai",
-    link: "https://tror.ai/",
-    thumbnail: tror,
-  },
-  {
-    title: "Hotel Bhabha",
-    link: "https://hotelbhabha.com/",
-    thumbnail: hotelBhabha,
+    title: "StudyNotion",
+    link: "https://study-notion-ed-t.vercel.app",
+    thumbnail: studynotion,
   },
   {
     title: "Nike Store",
-    link: "https://nike-limitless.vercel.app/",
+    link: "https://nikeshopease.netlify.app/",
     thumbnail: nikeStore,
   },
   {
-    title: "tror.ai",
-    link: "https://tror.ai/",
-    thumbnail: tror,
+    title: "Cineview",
+    link: "https://cineview-app.netlify.app/",
+    thumbnail: cineview,
   },
 
   
@@ -63,7 +60,7 @@ export const navItems = [
   },
   {
     name: "About",
-    link: "/#about",
+    link: "/about",
     icon: <UserIcon className="h-4 w-4 text-white" />
   },
   {
@@ -85,6 +82,7 @@ function App() {
 
   return (
     <div className="">
+        <ScrollToTop/>
       <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <Navbar navItems={navItems} />
         <Hero />

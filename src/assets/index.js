@@ -6,7 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import abilityex from './company/abilityex.png'
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -19,24 +19,17 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-import thimbot from './company/thimbbot.png'
-import heliverse from './company/heliverse.jpeg'
-import sofodel from './company/sofodel.jpeg'
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import hotelBhabha from './hotelBhabha.png'
+import codequotient_logo from './company/codequotient_logo.jpeg'
 import nikeStore from './nike-store.png'
-import chefkart from './company/chefkart.png'
-import tror from './company/tror.png'
+import studynotion from "./tech/studynotion.png"
+import buysellplatform from "./tech/buysellplatform.png"
+import cineview from "./tech/cineview.png"
 export {
+  cineview,
+  studynotion,
+  buysellplatform,
   logo,
   backend,
   creator,
@@ -57,19 +50,8 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  sofodel,
-  thimbot,
-  heliverse,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
-  hotelBhabha,
   nikeStore,
-  chefkart,
-  tror
+  abilityex,
+  nextjs,
+  codequotient_logo
 };

@@ -18,7 +18,7 @@ const Hero = () => {
           text: "am",
         },
         {
-          text: "Yogesh.",
+          text: "Gaurang.",
           className: `text-[#915EFF]`,
         },
       ];

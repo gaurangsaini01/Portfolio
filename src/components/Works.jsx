@@ -14,15 +14,16 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  livelink,
   source_code_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
-          max: 45,
+          max: 25,
           scale: 1,
-          speed: 450,
+          speed: 50,
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
@@ -50,7 +51,10 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <div className="flex  items-center justify-between">
+            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            {livelink && <a href={livelink} target="_blank" className="underline text-yellow-600 cursor-pointer hover:scale-105 hover:text-yellow-400 text-xs">Live Link</a>}
+          </div>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 

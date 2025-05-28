@@ -21,7 +21,7 @@ const Navbar = ({ navItems,
     if (typeof current === "number") {
       let direction = current - scrollYProgress.getPrevious();
  
-      if (scrollYProgress.get() < 0.05) {
+      if (scrollYProgress.get() < 0.01) {
         setVisible(false);
       } else {
         if (direction < 0) {

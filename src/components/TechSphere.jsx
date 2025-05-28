@@ -9,12 +9,12 @@ const TechSphere = () => {
     const Texts = [
       'React', 'HTML', 'CSS', 'Javascript', "Typescript",
         'Bootstrap', 'Node',
-        'express', 'mongoDB', 'Jquery',
-        'C++', 'python', 'Java',
-        'Go', 'Git', 'Github',
-        "DBMS",
+        'express', 'EJS',
+        'C++', 'C', 'Java',
+        'Python', 'Git', 'Github',
+        "DBMS","C#",
         "SASS", "JSON", "npm", "SQL",
-        "Tailwind", "Nextjs", "Prisma"
+        "Tailwind", "Nextjs", "MongoDB","Docker","Redis"
     ]
     
 useEffect(() => {
